@@ -9,7 +9,7 @@ def registrar_usuario():
   contrasenia = getpass.getpass("Ingrese su nueva contraseña: ")
   
   url = f"{BASE_URL}/registro"
-  datos = {"usuario": usuario, "contraseña": contrasenia}
+  datos = {"usuario": usuario, "contrasenia": contrasenia}
   
   try:
     respuesta = requests.post(url, json=datos)
@@ -22,7 +22,7 @@ def iniciar_sesion():
   contrasenia = getpass.getpass("Ingrese su contraseña: ")
     
   url = f"{BASE_URL}/login"
-  datos = {"usuario": usuario, "contraseña": contrasenia}
+  datos = {"usuario": usuario, "contrasenia": contrasenia}
 
   try:
     respuesta = requests.post(url, json=datos)
